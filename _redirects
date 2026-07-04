@@ -1,0 +1,22 @@
+# Clean project URLs (serve the existing .dc.html files at clean paths)
+/projects/shiftflow      /projects/ShiftFlow.dc.html      200
+/projects/squint         /projects/Squint.dc.html         200
+/projects/scrutas        /projects/Scrutas.dc.html        200
+/projects/paviq          /projects/PavIQ.dc.html          200
+/projects/gridsentinel   /projects/GridSentinel.dc.html   200
+/projects/dwell          /projects/Dwell.dc.html          200
+
+# Consolidate SEO: send old .dc.html URLs to the clean canonical ones
+/projects/ShiftFlow.dc.html      /projects/shiftflow      301
+/projects/Squint.dc.html         /projects/squint         301
+/projects/Scrutas.dc.html        /projects/scrutas        301
+/projects/PavIQ.dc.html          /projects/paviq          301
+/projects/GridSentinel.dc.html   /projects/gridsentinel   301
+/projects/Dwell.dc.html          /projects/dwell          301
+
+# Kill the duplicate homepage
+/Portfolio.dc.html   /   301
+
+# /projects alone has no page of its own — send it to the work section
+/projects    /#work   301
+/projects/   /#work   301
