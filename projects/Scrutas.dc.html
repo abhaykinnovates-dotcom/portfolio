@@ -256,9 +256,9 @@
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">A header, not a login, becomes the audit trail</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 20px;text-wrap:pretty;">The customer adds one HTTP response header; the platform polls for it every 60 seconds and logs the detection as a timestamped, immutable authorization record, attachable to any regulatory filing or client deliverable.</p>
           <div style="background:#0e0e12;border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:20px 22px;font-family:'JetBrains Mono',monospace;font-size:.82rem;line-height:1.7;color:#9fcabf;overflow-x:auto;">
-<span style="color:#5a5a62;">// Nginx</span><br/>
+<span style="color:#8a8a94;">// Nginx</span><br/>
 add_header <span style="color:#FFC321;">X-Scrutas-Verify</span> <span style="color:#82828c;">"scr_abc123_[token]"</span>;<br/><br/>
-<span style="color:#5a5a62;">// token properties</span><br/>
+<span style="color:#8a8a94;">// token properties</span><br/>
 format: <span style="color:#82828c;">scr_[domain-hash]_[random-256-bit-hex]</span> · validity: <span style="color:#82828c;">72h</span> · reuse: <span style="color:#82828c;">single-use</span>
           </div>
         </div>
