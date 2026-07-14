@@ -6,31 +6,6 @@
 /projects/gridsentinel   /projects/GridSentinel.dc.html   200
 /projects/dwell          /projects/Dwell.dc.html          200
 
-# Consolidate SEO: send old .dc.html URLs to the clean canonical ones
-/projects/ShiftFlow.dc.html      /projects/shiftflow      301
-/projects/Squint.dc.html         /projects/squint         301
-/projects/Scrutas.dc.html        /projects/scrutas        301
-/projects/PavIQ.dc.html          /projects/paviq          301
-/projects/GridSentinel.dc.html   /projects/gridsentinel   301
-/projects/Dwell.dc.html          /projects/dwell          301
-
-# About page clean URL
-/about        /about.html   200
-/about.html   /about        301
-
-# Work index clean URL
-/work         /work.html    200
-/work.html    /work         301
-
-# What-we-do clean URL
-/what-we-do        /what-we-do.html   200
-/what-we-do.html   /what-we-do        301
-
-# Insights clean URLs
-/insights           /insights.html      200
-/insights.html      /insights           301
-/insights/*         /insights/:splat.html  200
-
 # Kill the duplicate homepage
 /Portfolio.dc.html   /   301
 
