@@ -1,4 +1,5 @@
 # Clean project URLs (serve the existing .dc.html files at clean paths)
+/projects/council-of-ais /projects/CouncilOfAIs.dc.html   200
 /projects/shiftflow      /projects/ShiftFlow.dc.html      200
 /projects/squint         /projects/Squint.dc.html         200
 /projects/scrutas        /projects/Scrutas.dc.html        200
