@@ -21,7 +21,7 @@
    "headline": "Council of AIs — case study",
    "description": "An open-source engine that replaces AI subscriptions with a single prepaid budget, routing each task to the cheapest capable model. Built by a council of AIs: Claude Fable 5 as architect and verifier, Gemini as builder.",
    "url": "https://productgurus.ai/projects/council-of-ais",
-   "image": "https://productgurus.ai/assets/council-screenshot.png",
+   "image": "https://productgurus.ai/assets/og-card.png",
    "author": {
     "@type": "Person",
     "name": "Abhay Kumar"
@@ -74,11 +74,11 @@
 <meta property="og:title" content="Council of AIs · Budget-Driven Multi-Model Router Case Study">
 <meta property="og:description" content="An open-source engine that replaces AI subscriptions with one prepaid budget, routing each task to the cheapest capable model.">
 <meta property="og:url" content="https://productgurus.ai/projects/council-of-ais">
-<meta property="og:image" content="https://productgurus.ai/assets/council-screenshot.png">
+<meta property="og:image" content="https://productgurus.ai/assets/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Council of AIs · Budget-Driven Multi-Model Router Case Study">
 <meta name="twitter:description" content="An open-source engine that replaces AI subscriptions with one prepaid budget.">
-<meta name="twitter:image" content="https://productgurus.ai/assets/council-screenshot.png">
+<meta name="twitter:image" content="https://productgurus.ai/assets/og-card.png">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
@@ -145,7 +145,119 @@
       <div style="max-width:920px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1fr;gap:64px;">
 
         <div>
-          <image-slot id="council-screenshot" shape="rounded" radius="18" fit="contain" src="../assets/council-screenshot.png" placeholder="Drop a Council of AIs dashboard screenshot" style="width:100%;height:460px;border:1px solid rgba(255,255,255,.08);background:#0d0d10;"></image-slot>
+          <div style="width:100%;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:#0d0d10;padding:24px;box-sizing:border-box;">
+            <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Council of AIs system architecture: bypass gate, leader cascade, thinker and explorer tiers, graphify memory, budget ledger" style="width:100%;height:100%;display:block;background:#0d0d10;">
+              <style>
+                .node { fill: #121216; stroke: rgba(255,255,255,.12); stroke-width: 1px; transition: stroke .3s, stroke-width .3s; }
+                .node-yellow { fill: #121216; stroke: #FFC321; stroke-width: 1px; }
+                .node-teal { fill: #121216; stroke: #79d0bf; stroke-width: 1px; }
+                .node-ledger { fill: #121216; stroke: #8a8a94; stroke-width: 1px; }
+                .lbl { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #c2c2cc; text-anchor: middle; font-weight: 500; }
+                .lbl-accent { fill: #FFC321; }
+                .lbl-teal { fill: #79d0bf; }
+                .sec-label { font-family: 'JetBrains Mono', monospace; font-size: 8px; fill: #8a8a94; }
+                .line-normal { stroke: rgba(255,255,255,0.22); stroke-width: 1.2px; fill: none; stroke-dasharray: 5 5; animation: flow 4s linear infinite; }
+                .line-yellow { stroke: #FFC321; stroke-width: 1.2px; fill: none; stroke-dasharray: 5 5; animation: flow 4s linear infinite; }
+                .line-teal { stroke: #79d0bf; stroke-width: 1.2px; fill: none; stroke-dasharray: 5 5; animation: flow 4s linear infinite; }
+                .line-dashed { stroke: #8a8a94; stroke-width: 1.2px; fill: none; stroke-dasharray: 4 4; animation: flow-slow 8s linear infinite; }
+                @keyframes flow { to { stroke-dashoffset: -20; } }
+                @keyframes flow-slow { to { stroke-dashoffset: -20; } }
+                .node-user { animation: glow-white 8s infinite; animation-delay: 0s; }
+                .node-gate { animation: glow-yellow 8s infinite; animation-delay: 1.1s; }
+                .node-leader { animation: glow-yellow 8s infinite; animation-delay: 2.2s; }
+                .node-thinker { animation: glow-yellow 8s infinite; animation-delay: 3.3s; }
+                .node-explorer { animation: glow-teal 8s infinite; animation-delay: 3.3s; }
+                .node-escalation { animation: glow-white 8s infinite; animation-delay: 4.4s; }
+                .node-graphify { animation: glow-white 8s infinite; animation-delay: 5.5s; }
+                .node-memory { animation: glow-white 8s infinite; animation-delay: 6.6s; }
+                @keyframes glow-white { 0%, 100%, 30% { stroke: rgba(255,255,255,.12); stroke-width: 1px; } 15% { stroke: #ffffff; stroke-width: 1.6px; } }
+                @keyframes glow-yellow { 0%, 100%, 30% { stroke: #FFC321; stroke-width: 1px; } 15% { stroke: #ffffff; stroke-width: 1.6px; } }
+                @keyframes glow-teal { 0%, 100%, 30% { stroke: #79d0bf; stroke-width: 1px; } 15% { stroke: #ffffff; stroke-width: 1.6px; } }
+                @media (max-width: 580px) { .sec-label { display: none; } }
+                @media (prefers-reduced-motion: reduce) {
+                  .line-normal, .line-yellow, .line-teal, .line-dashed,
+                  .node-user, .node-gate, .node-leader, .node-thinker, .node-explorer, .node-escalation, .node-graphify, .node-memory {
+                    animation: none !important;
+                  }
+                }
+              </style>
+              <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="rgba(255,255,255,0.4)" />
+                </marker>
+                <marker id="arrow-yellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#FFC321" />
+                </marker>
+                <marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#79d0bf" />
+                </marker>
+              </defs>
+              <path d="M 85,62 L 85,122" class="line-normal" marker-end="url(#arrow)" />
+              <path d="M 85,172 L 85,257" class="line-normal" marker-end="url(#arrow)" />
+              <path d="M 150,150 L 174,150" class="line-yellow" marker-end="url(#arrow-yellow)" />
+              <path d="M 260,126 Q 260,65 365,65" class="line-yellow" marker-end="url(#arrow-yellow)" />
+              <path d="M 340,150 Q 355,160 365,160" class="line-teal" marker-end="url(#arrow-teal)" />
+              <path d="M 430,177 L 430,242" class="line-teal" marker-end="url(#arrow-teal)" />
+              <path d="M 500,265 C 520,265 520,65 496,65" class="line-yellow" marker-end="url(#arrow-yellow)" />
+              <path d="M 490,65 Q 510,65 510,112" class="line-yellow" marker-end="url(#arrow-yellow)" />
+              <path d="M 490,160 Q 510,160 510,112" class="line-teal" marker-end="url(#arrow-teal)" />
+              <path d="M 570,129 L 570,183" class="line-normal" marker-end="url(#arrow)" />
+              <path d="M 370,65 C 310,65 240,200 254,286" class="line-dashed" />
+              <path d="M 370,160 C 330,160 280,220 260,286" class="line-dashed" />
+              <text x="76" y="215" text-anchor="end" class="sec-label">trivial</text>
+              <text x="165" y="142" text-anchor="middle" class="sec-label">non-trivial</text>
+              <text x="290" y="80" text-anchor="start" class="sec-label">stakes / graph touch</text>
+              <text x="290" y="180" text-anchor="start" class="sec-label">volume / ambiguity</text>
+              <text x="438" y="215" text-anchor="start" class="sec-label">failure</text>
+              <g>
+                <rect x="20" y="28" width="130" height="34" rx="6" class="node node-user" />
+                <text x="85" y="49" class="lbl">User Task</text>
+              </g>
+              <g>
+                <path d="M 85,128 L 150,150 L 85,172 L 20,150 Z" class="node node-yellow node-gate" />
+                <text x="85" y="153" class="lbl lbl-accent" style="font-size: 9px;">Bypass Gate</text>
+              </g>
+              <g>
+                <rect x="20" y="263" width="130" height="34" rx="6" class="node" />
+                <text x="85" y="284" class="lbl">Cheap Model</text>
+              </g>
+              <g>
+                <path d="M 260,126 L 340,150 L 260,174 L 180,150 Z" class="node node-yellow node-leader" />
+                <text x="260" y="153" class="lbl lbl-accent" style="font-size: 9px;">Leader Gate</text>
+              </g>
+              <g>
+                <rect x="370" y="48" width="120" height="34" rx="6" class="node node-yellow node-thinker" />
+                <text x="430" y="69" class="lbl lbl-accent" style="font-size: 9px;">Thinker · Premium</text>
+              </g>
+              <g>
+                <rect x="370" y="143" width="120" height="34" rx="6" class="node node-teal node-explorer" />
+                <text x="430" y="164" class="lbl lbl-teal" style="font-size: 9px;">Explorer · Mid</text>
+              </g>
+              <g>
+                <rect x="360" y="248" width="140" height="34" rx="6" class="node node-escalation" />
+                <text x="430" y="269" class="lbl" style="font-size: 9px;">Escalation</text>
+              </g>
+              <g>
+                <rect x="515" y="95" width="110" height="34" rx="6" class="node node-graphify" />
+                <text x="570" y="116" class="lbl" style="font-size: 9px;">Graphify</text>
+              </g>
+              <g>
+                <ellipse cx="570" cy="189" rx="50" ry="6" class="node node-memory" style="fill: #121216; stroke: rgba(255,255,255,.12);" />
+                <rect x="520" y="189" width="100" height="36" fill="#121216" />
+                <path d="M 520,189 L 520,225 M 620,189 L 620,225" stroke="rgba(255,255,255,.12)" stroke-width="1" />
+                <ellipse cx="570" cy="225" rx="50" ry="6" class="node node-memory" style="fill: #121216; stroke: rgba(255,255,255,.12);" />
+                <text x="570" y="212" class="lbl">SQLite Mem</text>
+              </g>
+              <g>
+                <ellipse cx="260" cy="292" rx="55" ry="6" class="node node-ledger" style="fill: #121216; stroke: #8a8a94;" />
+                <rect x="205" y="292" width="110" height="36" fill="#121216" />
+                <path d="M 205,292 L 205,328 M 315,292 L 315,328" stroke="#8a8a94" stroke-width="1" />
+                <ellipse cx="260" cy="328" rx="55" ry="6" class="node node-ledger" style="fill: #121216; stroke: #8a8a94;" />
+                <text x="260" y="315" class="lbl" style="fill: #8a8a94;">Budget Ledger</text>
+              </g>
+            </svg>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.06em;color:#82828c;margin-top:12px;text-align:center;">System architecture: every dollar and every routing decision is enforced in code, not left to a model.</div>
         </div>
 
         <div>
